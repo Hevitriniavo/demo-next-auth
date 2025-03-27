@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "pnpm migrate:deploy && next build",
+    "build": "prisma generate && pnpm migrate:deploy && next build",
     "start": "next start",
     "migrate:dev": "prisma migrate dev",
     "migrate:deploy": "prisma migrate deploy",
